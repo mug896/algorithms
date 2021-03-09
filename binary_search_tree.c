@@ -329,8 +329,7 @@ double time_total = 0;
 char time_str [1024] = {}, 
      *ptr = time_str;
 
-#define TIME_START() \
-    clock_gettime (CLOCK_PROCESS_CPUTIME_ID, &tstart)
+#define TIME_START() clock_gettime (CLOCK_PROCESS_CPUTIME_ID, &tstart)
 
 #define TIME_END( $msg ) do { \
     clock_gettime (CLOCK_PROCESS_CPUTIME_ID, &tend); \
