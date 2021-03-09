@@ -7,8 +7,8 @@ binary search tree 는 데이터 입력, 검색, 삭제를 하는데 `O(log n)` 
 데이터가 정렬되어 저장된다는 점입니다.
 따라서 따로 sorting 을 하지 않아도 tree 를 inorder 방식으로 출력하면 정렬된 결과를 얻을 수 있고,
 tree 의 왼쪽 끝으로 가면 최소값이, 오른쪽 끝으로 가면 최대값이 나오게 됩니다.
-이와 같은 tree 의 성질을 활용하면 특정 range 가 overlap 되는지 알아볼 수 있는 interval tree
-같은 것도 만들 수 있습니다.
+이와 같은 tree 의 성질들을 활용하면 특정 range 가 overlap 되는지 알아볼 수 있는
+interval tree 같은 것도 만들 수 있습니다.
 
 
 binary search tree 는 데이터를 입력한 후에 아무런 처리를 하지 않기 때문에
