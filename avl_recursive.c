@@ -159,6 +159,9 @@ node_t *delete (node_t *root, int key)
     return root;
 }
 
+
+
+
 /////////////////////////////   tree 관련 함수들  ////////////////////////////
 
 void pre_order (node_t *n) {

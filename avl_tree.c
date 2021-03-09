@@ -252,6 +252,9 @@ void delete (avl_tree *t, avl_node *z)
     }
 }
 
+
+
+
 /////////////////////////////   tree 관련 함수들  ////////////////////////////
 
 void pre_order (avl_node *n)

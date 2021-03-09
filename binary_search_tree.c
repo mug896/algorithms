@@ -97,6 +97,9 @@ void delete (bs_tree *t, bs_node *z)
     }
 }
 
+
+
+
 /////////////////////////////   tree 관련 함수들  ////////////////////////////
 
 void pre_order (bs_node *n) 

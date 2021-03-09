@@ -280,6 +280,9 @@ void delete (rb_tree *t, rb_node *z)
         delete_fixup (t, x);
 }
 
+
+
+
 /////////////////////////////   tree 관련 함수들  ////////////////////////////
 
 void pre_order (rb_tree *t, rb_node *n) 
