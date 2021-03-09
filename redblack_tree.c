@@ -502,6 +502,9 @@ bool is_complete_binary_tree (rb_tree *t, rb_node *n, int index, int nr_nodes)
          && is_complete_binary_tree (t, n->right, 2 * index + 2, nr_nodes));
 }
 
+
+
+
 ////////////////////////////////  main 함수  //////////////////////////////
 
 struct timespec tstart, tend;
