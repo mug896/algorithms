@@ -56,8 +56,8 @@ The tree is NOT FULL binary tree
 The tree is NOT PERFECT binary tree
 The tree is NOT COMPLETE binary tree
 =========================================
-1000000 Insert DONE : 0.67408 seconds
-1000000 Search DONE : 0.54486 seconds
-1000000 Delete DONE : 0.23526 seconds
-Insert + Search + Delete : 1.45420 seconds
+1000000 Insert DONE : 0.61283 seconds
+1000000 Search DONE : 0.48632 seconds
+1000000 Delete DONE : 0.22706 seconds
+Insert + Search + Delete : 1.32621 seconds
 ```
