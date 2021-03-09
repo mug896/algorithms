@@ -1,4 +1,4 @@
-# algorithms
+# Trees
 
 
 binary search tree 는 데이터 입력, 검색, 삭제를 하는데 `O(log n)` 시간이 걸리기 때문에
