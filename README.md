@@ -19,10 +19,12 @@ binary search tree 는 데이터를 입력한 후에 아무런 처리를 하지 
 redblack tree 는 avl tree 와 같이 완벽하게 균형이 맞지는 않지만 대신 입력, 삭제 시 속도가
 빠릅니다. ( 그리고 실제 검색 속도도 비슷합니다. )
 
+
 위의 파일 목록에서 `avl_recursive.c` 는 recursion 을 이용해 구현한 것인데 recursion 을
 이용하면 코드가 간결하고 보기가 좋지만 속도는 좀 떨어집니다.
 따라서 자료구조를 만들 때는 가능하면 loop 문과 필요할 경우 stack 을 사용해 구현하는 것이
 속도에 좋습니다.
+
 
 위의 코드에 대한 자세한 설명은 아래 사이트에서 볼 수 있습니다.  
 소스코드도 예제에 있는 것인데 typo 오류가 있어서 수정을 하였습니다.
@@ -32,7 +34,8 @@ https://www.codesdope.com/course/data-structures-introduction/
 
 ```sh
 #
-# randoms.h 는 데이터 입력에 사용하기 위한 파일로 1 ~ 1,000,000 숫자를 shuf 명령으로 섞어서 array 로 저장한 것입니다.
+# randoms.h 는 데이터 입력에 사용하기 위한 파일로 
+# 1 ~ 1,000,000 숫자를 shuf 명령으로 섞어서 array 로 저장한 것입니다.
 #
 
 $ gcc -O2 redblack_tree.c
