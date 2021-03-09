@@ -537,7 +537,7 @@ int main()
     printf ("node count 1degree : %d\n", count_1degree (t->root));
     printf ("node count leaf : %d\n", count_leaf (t->root));
     printf ("node count internal : %d\n", count_internal (t->root));
-    printf ("sum all node data : %d\n", sum_all_data (t->root));
+    printf ("sum all node value : %d\n", sum_all_data (t->root));
 
 
     printf ("The tree is %s tree\n",

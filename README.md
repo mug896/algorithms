@@ -50,7 +50,7 @@ node count 2degree : 428414
 node count 1degree : 143171
 node count leaf : 428415
 node count internal : 571585
-sum all node data : 1784293664
+sum all node value : 1784293664
 The tree is BINARY SEARCH tree
 The tree is NOT FULL binary tree
 The tree is NOT PERFECT binary tree
