@@ -32,7 +32,7 @@ https://www.codesdope.com/course/data-structures-introduction/
 
 ```sh
 #
-# randoms.h 는 테스팅에 사용하기 위한 파일로 중복 없는 random 넘버 100 만개 array 입니다. 
+# randoms.h 는 데이터 입력에 사용하기 위한 파일로 1 ~ 1,000,000 숫자를 shuf 명령으로 섞어서 array 로 저장한 것입니다.
 #
 
 $ gcc -O2 redblack_tree.c
