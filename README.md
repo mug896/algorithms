@@ -34,7 +34,7 @@ https://www.codesdope.com/course/data-structures-introduction/
 
 ```sh
 #
-# randoms.h 는 데이터 입력에 사용하기 위한 파일로 
+# randoms.h 파일은 데이터 입력에 사용하기 위한 파일로 
 # 1 ~ 1,000,000 숫자를 shuf 명령으로 섞어서 array 로 저장한 것입니다.
 #
 
