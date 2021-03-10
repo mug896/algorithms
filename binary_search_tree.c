@@ -32,7 +32,7 @@ bs_tree *new_bs_tree()
     return t;
 }
 
-bs_node* minimum (bs_tree *t, bs_node *x) 
+bs_node* minimum (bs_tree *t, bs_node *x)  // inorder successor
 {
     while (x->left != NULL)
         x = x->left;
@@ -75,16 +75,16 @@ void transplant (bs_tree *t, bs_node *u, bs_node *v)
 
 void delete (bs_tree *t, bs_node *z) 
 {
-    if (z->left == NULL) {                   // one degree
+    if (z->left == NULL) {                   // 1 degree
         transplant (t, z, z->right);
         free(z);
     }
-    else if (z->right == NULL) {             // one degree
+    else if (z->right == NULL) {             // 1 degree
         transplant (t, z, z->left);
         free(z);
     }
-    else {                                   // two degree
-        bs_node *y = minimum (t, z->right);  // inorder successor
+    else {                                   // 2 degree
+        bs_node *y = minimum (t, z->right);
         if (y->parent != z) {
             transplant (t, y, y->right);
             y->right = z->right;
