@@ -44,7 +44,7 @@ https://www.codesdope.com/course/data-structures-introduction/
 # 1 ~ 1,000,000 숫자를 shuf 명령으로 섞어서 array 로 저장한 것입니다.
 #
 
-$ gcc -O2 redblack_tree.c
+$ gcc -O2 red_black_tree.c
 
 $ ./a.out 
 first node : 1
