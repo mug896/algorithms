@@ -15,7 +15,7 @@ binary search tree 는 데이터를 입력한 후에 아무런 처리를 하지 
 입력되는 값이 sequential 하게 이어질 경우 tree 가 한쪽으로 쏠리게 되어 성능이 `O(n)` 까지
 떨어질 수 있습니다.
 따라서 데이터를 입력, 삭제할 때마다 tree 의 균형을 맞춰주는 것이 필요한데
-여기에는 대표적으로 redblack tree 와 avl tree 가 있습니다.
+여기에는 대표적으로 avl tree 와 redblack tree 가 있습니다.
 redblack tree 는 avl tree 와 같이 완벽하게 균형이 맞지는 않지만 대신 입력, 삭제 시 속도가
 빠릅니다. ( 그리고 실제 검색 속도도 비슷합니다. )
 
