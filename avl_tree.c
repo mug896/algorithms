@@ -488,8 +488,8 @@ char time_str [1024] = {},
 
 #define TIME_END( $msg ) do { \
     clock_gettime (CLOCK_PROCESS_CPUTIME_ID, &tend); \
-    double res = ((double)tend.tv_sec + 1.0e-9 * tend.tv_nsec) - \
-                 ((double)tstart.tv_sec + 1.0e-9 * tstart.tv_nsec); \
+    double res = ((double)tend.tv_sec + 1.0e-9 * tend.tv_nsec) \
+                 - ((double)tstart.tv_sec + 1.0e-9 * tstart.tv_nsec); \
     ptr += sprintf (ptr, "%d " $msg " : %.5f seconds\n", i, res); \
     time_total += res; \
 } while (0)
