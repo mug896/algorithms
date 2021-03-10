@@ -27,7 +27,7 @@ redblack tree 는 avl tree 와 같이 완벽하게 균형이 맞지는 않지만
 
 
 위의 코드에 대한 자세한 설명은 아래 사이트에서 볼 수 있습니다.  
-소스코드도 예제에 있는 것인데 typo 오류가 있어서 수정을 하였습니다.
+소스코드도 예제에 있는 것인데 typo 오류가 있어서 수정을 한 것입니다.
 
 https://www.codesdope.com/course/data-structures-introduction/
 
