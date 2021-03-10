@@ -44,6 +44,7 @@ $ ./a.out
 first node : 1
 last node : 1000000
 prev node : 214095
+next node : 214097
 tree height : 24
 node count all : 1000000
 node count 2degree : 428414

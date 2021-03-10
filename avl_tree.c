@@ -529,7 +529,8 @@ int main()
     printf ("last node : %d\n", tmp ? tmp->data : 0);
     tmp = prev_node (arr[3]);
     printf ("prev node : %d\n", tmp ? tmp->data : 0);
-
+    tmp = next_node (arr[3]);
+    printf ("next node : %d\n", tmp ? tmp->data : 0);
 
     printf ("tree height : %d\n", tree_height (t->root));
     printf ("node count all : %d\n", count_all_node (t->root));
