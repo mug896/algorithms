@@ -305,70 +305,70 @@ void in_order (rb_tree *t, rb_node *n)
 
 rb_node *search (rb_tree *t, int data) 
 {
-    rb_node *node = t->root;
-    while (node != t->NIL) {
-        if (data < node->data)
-            node = node->left;
-        else if (data > node->data)
-            node = node->right;
+    rb_node *n = t->root;
+    while (n != t->NIL) {
+        if (data < n->data)
+            n = n->left;
+        else if (data > n->data)
+            n = n->right;
         else
-            return node;
+            return n;
     }
     return NULL;
 }
 
 rb_node *first_node (rb_tree *t)
 {
-    rb_node *node = t->root;
-    if (node == t->NIL) 
+    rb_node *n = t->root;
+    if (n == t->NIL) 
         return NULL;
-    while (node->left != t->NIL)
-        node = node->left;
-    return node;
+    while (n->left != t->NIL)
+        n = n->left;
+    return n;
 }
 
 rb_node *last_node (rb_tree *t)
 {
-    rb_node *node = t->root;
-    if (node == t->NIL) 
+    rb_node *n = t->root;
+    if (n == t->NIL) 
         return NULL;
-    while (node->right != t->NIL)
-        node = node->right;
-    return node;
+    while (n->right != t->NIL)
+        n = n->right;
+    return n;
 }
 
-rb_node *next_node (rb_tree *t, rb_node *node)
+rb_node *next_node (rb_tree *t, rb_node *n)
 {
-    if (node == NULL || node == t->NIL) 
+    if (n == NULL || n == t->NIL) 
         return NULL;
-    if (node->right == t->NIL) {
-        if (node->parent != t->NIL && node == node->parent->left)
-            return node->parent;
-        while (node->parent != t->NIL && node == node->parent->right)
-            node = node->parent;
-        return node->parent;
+    if (n->right == t->NIL) {
+        if (n->parent != t->NIL && n == n->parent->left)
+            return n->parent;
+        while (n->parent != t->NIL && n == n->parent->right)
+            n = n->parent;
+        return n->parent;
     }
-    node = node->right;
-    while (node->left != t->NIL)
-        node = node->left;
-    return node;
+    n = n->right;
+    while (n->left != t->NIL)
+        n = n->left;
+    return n;
 }
 
-rb_node *prev_node (rb_tree *t, rb_node *node)
+rb_node *prev_node (rb_tree *t, rb_node *n)
 {
-    if (node == NULL || node == t->NIL) 
+    if (n == NULL || n == t->NIL) 
         return NULL;
-    if (node->left == t->NIL) {
-        if (node->parent != t->NIL && node == node->parent->right)
-            return node->parent;
-        while (node->parent != t->NIL && node == node->parent->left)
-            node = node->parent;
-        return node->parent;
+    if (n->left == t->NIL) {
+        if (n->parent != t->NIL && n == n->parent->right)
+            return n->parent;
+        while (n->parent != t->NIL && n == n->parent->left)
+            n = n->parent;
+        return n->parent;
     }
-    node = node->left;
-    while (node->right != t->NIL)
-        node = node->right;
-    return node;
+    n = n->left;
+    while (n->right != t->NIL)
+        n = n->right;
+    return n;
 }
 
 int tree_height (rb_tree *t, rb_node *n)

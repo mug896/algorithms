@@ -277,70 +277,70 @@ void in_order (avl_node *n)
 
 avl_node *search (avl_tree *t, int data) 
 {
-    avl_node *node = t->root;
-    while (node != NULL) {
-        if (data < node->data)
-            node = node->left;
-        else if (data > node->data)
-            node = node->right;
+    avl_node *n = t->root;
+    while (n != NULL) {
+        if (data < n->data)
+            n = n->left;
+        else if (data > n->data)
+            n = n->right;
         else
-            return node;
+            return n;
     }
     return NULL;
 }
 
 avl_node *first_node (avl_tree *t)
 {
-    avl_node *node = t->root;
-    if (node == NULL)
+    avl_node *n = t->root;
+    if (n == NULL)
         return NULL;
-    while (node->left)
-        node = node->left;
-    return node;
+    while (n->left)
+        n = n->left;
+    return n;
 }
 
 avl_node *last_node (avl_tree *t)
 {
-    avl_node *node = t->root;
-    if (node == NULL)
+    avl_node *n = t->root;
+    if (n == NULL)
         return NULL;
-    while (node->right)
-        node = node->right;
-    return node;
+    while (n->right)
+        n = n->right;
+    return n;
 }
 
-avl_node *next_node (avl_node *node)
+avl_node *next_node (avl_node *n)
 {
-    if (node == NULL) 
+    if (n == NULL) 
         return NULL;
-    if (node->right == NULL) {
-        if (node->parent && node == node->parent->left)
-            return node->parent;
-        while (node->parent && node == node->parent->right)
-            node = node->parent;
-        return node->parent;
+    if (n->right == NULL) {
+        if (n->parent && n == n->parent->left)
+            return n->parent;
+        while (n->parent && n == n->parent->right)
+            n = n->parent;
+        return n->parent;
     }
-    node = node->right;
-    while (node->left)
-        node = node->left;
-    return node;
+    n = n->right;
+    while (n->left)
+        n = n->left;
+    return n;
 }
 
-avl_node *prev_node (avl_node *node)
+avl_node *prev_node (avl_node *n)
 {
-    if (node == NULL) 
+    if (n == NULL) 
         return NULL;
-    if (node->left == NULL) {
-        if (node->parent && node == node->parent->right)
-            return node->parent;
-        while (node->parent && node == node->parent->left)
-            node = node->parent;
-        return node->parent;
+    if (n->left == NULL) {
+        if (n->parent && n == n->parent->right)
+            return n->parent;
+        while (n->parent && n == n->parent->left)
+            n = n->parent;
+        return n->parent;
     }
-    node = node->left;
-    while (node->right)
-        node = node->right;
-    return node;
+    n = n->left;
+    while (n->right)
+        n = n->right;
+    return n;
 }
 
 int tree_height (avl_node *n)

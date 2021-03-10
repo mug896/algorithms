@@ -180,35 +180,35 @@ void in_order (node_t *n) {
     }
 }
 
-node_t *search (node_t *root, int key) 
+node_t *search (node_t *n, int key) 
 {
-    while (root != NULL) {
-        if (key < root->key)
-            root = root->left;
-        else if (key > root->key)
-            root = root->right;
+    while (n != NULL) {
+        if (key < n->key)
+            n = n->left;
+        else if (key > n->key)
+            n = n->right;
         else
-            return root;
+            return n;
     }
     return NULL;
 }
 
-node_t *first_node (node_t *node)
+node_t *first_node (node_t *n)
 {
-    if (node == NULL)
+    if (n == NULL)
         return NULL;
-    while (node->left)
-        node = node->left;
-    return node;
+    while (n->left)
+        n = n->left;
+    return n;
 }
 
-node_t *last_node (node_t *node)
+node_t *last_node (node_t *n)
 {
-    if (node == NULL)
+    if (n == NULL)
         return NULL;
-    while (node->right)
-        node = node->right;
-    return node;
+    while (n->right)
+        n = n->right;
+    return n;
 }
 
 int tree_height (node_t *n)
