@@ -389,6 +389,7 @@ int main()
     }
     TIME_END("Search DONE");
 
+
     printf ("first node : %d\n", first_node (root)->key);
     printf ("last node : %d\n", last_node (root)->key);
 
@@ -416,6 +417,7 @@ int main()
             is_complete_binary_tree (root, 0, count_all_node (root)) ?
             "COMPLETE" : "NOT COMPLETE");
 
+    //pre_order (root); puts ("");
     //in_order (root); puts ("");
 
     TIME_START();

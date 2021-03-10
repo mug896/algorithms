@@ -402,7 +402,7 @@ int main()
             is_complete_binary_tree (t->root, 0, count_all_node (t->root)) ?
             "COMPLETE" : "NOT COMPLETE");
 
-
+    //pre_order (t->root); puts ("");
     //in_order (t->root); puts ("");
 
     TIME_START();
