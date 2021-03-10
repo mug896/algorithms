@@ -278,7 +278,7 @@ void in_order (avl_node *n)
 avl_node *search (avl_tree *t, int data) 
 {
     avl_node *node = t->root;
-    while (node) {
+    while (node != NULL) {
         if (data < node->data)
             node = node->left;
         else if (data > node->data)

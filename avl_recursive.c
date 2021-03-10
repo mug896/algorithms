@@ -182,7 +182,7 @@ void in_order (node_t *n) {
 
 node_t *search (node_t *root, int key) 
 {
-    while (root) {
+    while (root != NULL) {
         if (key < root->key)
             root = root->left;
         else if (key > root->key)

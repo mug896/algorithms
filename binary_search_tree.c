@@ -123,7 +123,7 @@ void in_order (bs_node *n)
 bs_node *search (bs_tree *t, int data) 
 {
     bs_node *node = t->root;
-    while (node) {
+    while (node != NULL) {
         if (data < node->data)
             node = node->left;
         else if (data > node->data)
