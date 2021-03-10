@@ -247,11 +247,11 @@ int count_internal (bs_node *n)
         return count_internal (n->left) + count_internal (n->right);
 }
 
-int sum_all (bs_node *n)
+int sum_all_data (bs_node *n)
 {
     if (n == NULL)
         return 0;
-    return sum_all (n->left) + sum_all (n->right) + n->data;
+    return sum_all_data (n->left) + sum_all_data (n->right) + n->data;
 }
 
 bool is_binary_search_tree (bs_node *n, int min, int max)  
@@ -383,7 +383,7 @@ int main()
     printf ("node count 1degree : %d\n", count_1degree (t->root));
     printf ("node count leaf : %d\n", count_leaf (t->root));
     printf ("node count internal : %d\n", count_internal (t->root));
-    printf ("sum all node value : %d\n", sum_all (t->root));
+    printf ("sum all node value : %d\n", sum_all_data (t->root));
 
 
     printf ("The tree is %s tree\n",
