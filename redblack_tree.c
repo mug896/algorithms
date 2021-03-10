@@ -437,7 +437,6 @@ int sum_all_data (rb_tree *t, rb_node *n)
     return sum_all_data (t, n->left) + sum_all_data (t, n->right) + n->data;
 }
 
-
 bool is_binary_search_tree (rb_tree *t, rb_node *n, int min, int max)  
 {  
     if (n == t->NIL)

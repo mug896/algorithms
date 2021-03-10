@@ -254,7 +254,6 @@ int sum_all (bs_node *n)
     return sum_all (n->left) + sum_all (n->right) + n->data;
 }
 
-
 bool is_binary_search_tree (bs_node *n, int min, int max)  
 {  
     if (n == NULL)

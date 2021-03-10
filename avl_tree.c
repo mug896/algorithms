@@ -409,7 +409,6 @@ int sum_all_data (avl_node *n)
     return sum_all_data (n->left) + sum_all_data (n->right) + n->data;
 }
 
-
 bool is_binary_search_tree (avl_node *n, int min, int max)  
 {  
     if (n == NULL)
