@@ -20,8 +20,8 @@ redblack tree 는 avl tree 와 같이 완벽하게 균형이 맞지는 않지만
 빠릅니다. ( 그리고 실제 검색 속도도 비슷합니다. )
 
 
-위의 파일 목록에서 `avl_recursive.c` 는 recursion 을 이용해 구현한 것인데 recursion 을
-이용하면 코드가 간결하고 보기가 좋지만 속도는 좀 떨어집니다.
+위의 파일 목록에서 `avl_recursive.c` 는 avl tree 를 recursion 을 이용해 구현한 것인데
+recursion 을 이용하면 코드가 간결하고 보기가 좋지만 속도는 좀 떨어집니다.
 따라서 자료구조를 만들 때는 가능하면 loop 문과 필요할 경우 stack 을 사용해 구현하는 것이
 좋습니다.
 
@@ -31,7 +31,7 @@ redblack tree 는 avl tree 와 같이 완벽하게 균형이 맞지는 않지만
 
 https://www.codesdope.com/course/data-structures-introduction/
 
-#### 동영상 강좌 
+#### 참고 동영상 강좌 
 
 - [AVL Tree - Insertion and Rotations](https://youtu.be/jDM6_TnYIqE)
 
