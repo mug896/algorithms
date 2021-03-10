@@ -446,8 +446,7 @@ bool is_binary_search_tree (rb_tree *t, rb_node *n, int min, int max)
     if (n->data < min || n->data > max)  
         return false;
   
-    return 
-        is_binary_search_tree (t, n->left, min, n->data - 1)
+    return is_binary_search_tree (t, n->left, min, n->data - 1)
         && is_binary_search_tree (t, n->right, n->data + 1, max);
 }  
 
@@ -498,8 +497,8 @@ bool is_complete_binary_tree (rb_tree *t, rb_node *n, int index, int nr_nodes)
     if (index >= nr_nodes)
         return false;
 
-    return (is_complete_binary_tree (t, n->left, 2 * index + 1, nr_nodes) 
-         && is_complete_binary_tree (t, n->right, 2 * index + 2, nr_nodes));
+    return is_complete_binary_tree (t, n->left, 2 * index + 1, nr_nodes) 
+        && is_complete_binary_tree (t, n->right, 2 * index + 2, nr_nodes);
 }
 
 

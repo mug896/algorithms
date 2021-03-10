@@ -166,7 +166,7 @@ bs_node *next_node (bs_node *node)
         return node->parent;
     }
     node = node->right;
-    while (node->left != NULL)
+    while (node->left)
         node = node->left;
     return node;
 }
@@ -183,7 +183,7 @@ bs_node *prev_node (bs_node *node)
         return node->parent;
     }
     node = node->left;
-    while (node->right != NULL)
+    while (node->right)
         node = node->right;
     return node;
 }
@@ -263,8 +263,7 @@ bool is_binary_search_tree (bs_node *n, int min, int max)
     if (n->data < min || n->data > max)  
         return false;
   
-    return 
-        is_binary_search_tree (n->left, min, n->data - 1)
+    return is_binary_search_tree (n->left, min, n->data - 1)
         && is_binary_search_tree (n->right, n->data + 1, max);
 }  
 
@@ -315,8 +314,8 @@ bool is_complete_binary_tree (bs_node *n, int index, int nr_nodes)
     if (index >= nr_nodes)
         return false;
 
-    return (is_complete_binary_tree (n->left, 2 * index + 1, nr_nodes) 
-         && is_complete_binary_tree (n->right, 2 * index + 2, nr_nodes));
+    return is_complete_binary_tree (n->left, 2 * index + 1, nr_nodes) 
+        && is_complete_binary_tree (n->right, 2 * index + 2, nr_nodes);
 }
 
 

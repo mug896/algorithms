@@ -104,7 +104,7 @@ int balance_factor (avl_node *n)
 {
     if (n == NULL)
         return 0;
-    return (height (n->left) - height (n->right));
+    return height (n->left) - height (n->right);
 }
 
 void insert (avl_tree *t, avl_node *n) 
@@ -321,7 +321,7 @@ avl_node *next_node (avl_node *node)
         return node->parent;
     }
     node = node->right;
-    while (node->left != NULL)
+    while (node->left)
         node = node->left;
     return node;
 }
@@ -338,7 +338,7 @@ avl_node *prev_node (avl_node *node)
         return node->parent;
     }
     node = node->left;
-    while (node->right != NULL)
+    while (node->right)
         node = node->right;
     return node;
 }
@@ -470,8 +470,8 @@ bool is_complete_binary_tree (avl_node *n, int index, int nr_nodes)
     if (index >= nr_nodes)
         return false;
 
-    return (is_complete_binary_tree (n->left, 2 * index + 1, nr_nodes) 
-         && is_complete_binary_tree (n->right, 2 * index + 2, nr_nodes));
+    return is_complete_binary_tree (n->left, 2 * index + 1, nr_nodes) 
+        && is_complete_binary_tree (n->right, 2 * index + 2, nr_nodes);
 }
 
 

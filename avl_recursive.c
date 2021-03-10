@@ -338,8 +338,8 @@ bool is_complete_binary_tree (node_t *n, int index, int nr_nodes)
     if (index >= nr_nodes)
         return false;
 
-    return (is_complete_binary_tree (n->left, 2 * index + 1, nr_nodes) 
-         && is_complete_binary_tree (n->right, 2 * index + 2, nr_nodes));
+    return is_complete_binary_tree (n->left, 2 * index + 1, nr_nodes) 
+        && is_complete_binary_tree (n->right, 2 * index + 2, nr_nodes);
 }
 
 
