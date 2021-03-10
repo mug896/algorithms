@@ -5,7 +5,7 @@ binary search tree 는 데이터 입력, 검색, 삭제를 하는데 `O(log n)` 
 데이터가 많이 증가하더라도 큰 차이가 나지 않습니다.
 단순히 name 을 이용해 빠르게 value 값을 찾을 때는 hash table 이 좋지만 tree 의 장점은
 데이터가 정렬되어 저장된다는 점입니다.
-따라서 따로 sorting 을 하지 않아도 tree 를 inorder 방식으로 출력하면 정렬된 결과를 얻을 수 있고,
+따라서 따로 sorting 을 하지 않아도 tree 를 in_order 방식으로 출력하면 정렬된 결과를 얻을 수 있고,
 tree 의 왼쪽 끝으로 가면 최소값이, 오른쪽 끝으로 가면 최대값이 나오게 됩니다.
 이와 같은 tree 의 성질들을 활용하면 특정 range 가 overlap 되는지 찾아볼 수 있는
 interval tree 같은 것도 만들 수 있습니다.
