@@ -31,9 +31,12 @@ redblack tree 는 avl tree 와 같이 완벽하게 균형이 맞지는 않지만
 
 https://www.codesdope.com/course/data-structures-introduction/
 
-- AVL Tree - Insertion and Rotations : https://youtu.be/jDM6_TnYIqE
+#### 동영상 강좌 
 
-- B Trees and B+ Trees. How they are useful in Databases : https://youtu.be/aZjYr87r1b8
+- [AVL Tree - Insertion and Rotations](https://youtu.be/jDM6_TnYIqE)
+
+- [B Trees and B+ Trees. How they are useful in Databases](https://youtu.be/aZjYr87r1b8)
+
 
 ```sh
 #
