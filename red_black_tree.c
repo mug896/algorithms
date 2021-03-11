@@ -8,10 +8,10 @@ enum COLOR {Red, Black};
 
 typedef struct rb_node {
     int data;
+    enum COLOR color;
     struct rb_node *right;
     struct rb_node *left;
     struct rb_node *parent;
-    enum COLOR color;
 } rb_node;
 
 typedef struct rb_tree {
