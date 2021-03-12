@@ -17,7 +17,7 @@ binary search tree 는 데이터를 입력한 후에 아무런 처리를 하지 
 따라서 데이터를 입력, 삭제할 때마다 tree 의 균형을 맞춰주는 것이 필요한데
 여기에는 대표적으로 avl tree 와 red-black tree 가 있습니다.
 red-black tree 는 avl tree 와 같이 완전하게 균형이 맞지는 않지만 대신 입력, 삭제 속도가
-빠릅니다. ( 그리고 실제 검색 속도도 비슷합니다. )
+빠릅니다. ( 그리고 검색 속도도 비슷합니다. )
 
 
 위의 파일 목록에서 `avl_recursive.c` 는 avl tree 를 recursion 을 이용해 구현한 것인데
