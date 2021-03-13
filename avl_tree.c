@@ -417,8 +417,7 @@ bool is_binary_search_tree (avl_node *n, int min, int max)
     if (n->data < min || n->data > max)  
         return false;
   
-    return 
-        is_binary_search_tree (n->left, min, n->data - 1)
+    return is_binary_search_tree (n->left, min, n->data - 1)
         && is_binary_search_tree (n->right, n->data + 1, max);
 }  
 

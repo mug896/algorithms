@@ -285,8 +285,7 @@ bool is_binary_search_tree (node_t *n, int min, int max)
     if (n->key < min || n->key > max)  
         return false;
   
-    return 
-        is_binary_search_tree (n->left, min, n->key - 1)
+    return is_binary_search_tree (n->left, min, n->key - 1)
         && is_binary_search_tree (n->right, n->key + 1, max);
 }  
 
