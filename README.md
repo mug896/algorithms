@@ -37,6 +37,8 @@ https://www.codesdope.com/course/data-structures-introduction/
 
 - [B Trees and B+ Trees. How they are useful in Databases](https://youtu.be/aZjYr87r1b8)
 
+- [Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
+
 
 ```sh
 #
