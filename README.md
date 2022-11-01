@@ -21,7 +21,7 @@ red-black tree 는 avl tree 와 같이 완전하게 균형이 맞지는 않지�
 
 
 위의 파일 목록에서 `avl_recursive.c` 는 avl tree 를 recursion 을 이용해 구현한 것인데
-[recursion](https://dev.to/rohit/demystifying-tail-call-optimization-5bf3) 을 이용하면 코드가 간결하고 보기가 좋지만 속도는 좀 떨어집니다.
+[recursion](https://dev.to/rohit/demystifying-tail-call-optimization-5bf3) 을 이용하면 코드가 간결하고 보기는 좋지만 속도는 좀 떨어질 수 있습니다.
 따라서 자료구조를 만들 때는 loop 문과 필요할 경우 stack 을 이용해 구현하면 더 좋습니다.
 
 
